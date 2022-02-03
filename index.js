@@ -78,3 +78,38 @@ const ayotonDekhao = ayoton(width, height);
 console.log(ayotonDekhao);
 
 // ৫. কোন একটা array এর মধ্যে অনেকগুলা সংখ্যা আছে। সেই সংখ্যাগুলো থেকে second largest সংখ্যা বের করার একটা প্রোগ্রাম লিখো। দরকার হলে গুগলে সার্চ দাও। তারপর সার্চ রেজাল্ট দেখে বুঝে বুঝে করার চেষ্টা করো। 
+
+// var arr1 = [2, 3, 1, 6, 100, 49, 5, 7, 8, 9];
+
+// function getSecondMaxNumber(array) {
+//     var max1 = 0;
+//     var max2 = 0;
+//     for (var i = 0; i <= array.length; i++) {
+//         if (max1 < array[i]) {
+//             max1 = array[i];
+//         } else if (max2 < array[i]) {
+//             max2 = array[i];
+//         }
+//     }
+//     return max2;
+// }
+// console.log(getSecondMaxNumber(arr1));
+
+let arr = [5, 75, 23, 44, 56, 58, 7, 6, 76, 7, 5];
+function secendMax(array) {
+  let max1 = 0;
+  let max2 = 0;
+  for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    if (max1 < element) {
+      max1 = element;
+    }
+    else if (max2 < element) {
+      max2 = element;
+    }
+    
+  }
+  return max2;
+}
+const find2ndMax = secendMax(arr);
+console.log(find2ndMax);
